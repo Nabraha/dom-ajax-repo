@@ -43,7 +43,6 @@ getForm.addEventListener("submit", function(e) {
   var value = getForm.querySelector('input[type="text"]').value.toLowerCase();
   if (value === "") {
     value = defaultUser;
-    console.log("val 1", value);
   }
 
   var url = "https://api.github.com/users/" + value + "/repos";
